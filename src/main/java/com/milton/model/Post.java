@@ -3,6 +3,7 @@ package com.milton.model;
 import java.math.BigInteger;
 import java.time.Instant;
 
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,12 +15,15 @@ import javax.validation.constraints.NotBlank;
 import com.sun.istack.Nullable;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
+@Builder
 public class Post {
 
 	@Id
